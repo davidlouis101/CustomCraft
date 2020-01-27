@@ -50,7 +50,7 @@ class Main extends PluginBase{
 			}
 
 			if(!($tags instanceof \pocketmine\nbt\tag\CompoundTag) or $exception !== null){
-				$this->getLogger()->warning("Could not get item [" . implode(", ", $item) . "] : " . $exception->getMessage());
+				$this->getLogger()->warning("item konnte nicht geladen [" . implode(", ", $item) . "] : " . $exception->getMessage());
 				return $result;
 			}
             
